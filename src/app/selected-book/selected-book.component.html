@@ -1,0 +1,13 @@
+<section id="selected-book">
+  <div>
+    <header>
+      <h2>{{ book.title }}</h2>
+    </header>
+    <p>Price: {{ book.price }}</p>
+    <p>Number in stock: {{ book.numberInStock }}</p>
+    <a [routerLink]="['/details', book.id]">Learn more</a>
+  </div>
+  <button id="delete-button">
+    <img src="rubbish-bin-svgrepo-com.png" alt="trash bin" (click)="onDeleteButtonClick()">
+  </button>
+</section>
