@@ -1,0 +1,6 @@
+<app-card>
+  <button [class.active]="selected" (click)="onSelectBook()">
+    <img [src]="book.imgUrl" [alt]="book.title" />
+    <span>{{ book.title }}</span>
+  </button>
+</app-card>

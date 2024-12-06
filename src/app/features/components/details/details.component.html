@@ -1,0 +1,11 @@
+<main>
+  <div class="book-cover">
+    <h2>{{ book?.title }}</h2>
+    <img [src]="book?.imgUrl" [alt]="book?.title">
+  </div>
+  <div class="book-info">
+    <p>Price: {{ book?.price | currency:'USD' }}</p>
+    <p>Language: {{ book?.language | star }}</p>
+    <p>Description: {{ book?.description }}</p>
+  </div>
+</main>

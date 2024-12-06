@@ -1,0 +1,17 @@
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2.5rem auto;
+  display: flex;
+  grid-auto-flow: row;
+}
+
+img {
+  width: 15rem;
+  object-fit: contain;
+  border-radius: 3%;
+}
+
+.book-info {
+  margin-left: 5%;
+}
